@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Museo Sans — Explore classical paintings and vintage art collections from renowned European museums.">
+    <title>Museo Sans — Art Collections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Suwannaphum:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="main-header">
+        <div class="header-inner">
+            <div class="logo-pill" id="logo">
+                <span>Museo Sans</span>
+            </div>
+            <nav class="nav-center" id="main-nav">
+                <a href="#" class="nav-link" id="nav-collections">Collections</a>
+                <a href="#" class="nav-link" id="nav-mission">Our mission</a>
+                <a href="#" class="nav-link" id="nav-events">Events</a>
+            </nav>
+            <a href="#" class="contact-btn" id="contact-btn">Contact now</a>
+            <button class="menu-btn" id="menu-btn" aria-label="Open menu">Menu</button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay">
+        <div class="mobile-overlay-inner">
+            <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close menu">✕</button>
+            <nav class="mobile-nav">
+                <a href="#" class="mobile-nav-link">Collections</a>
+                <a href="#" class="mobile-nav-link">Our mission</a>
+                <a href="#" class="mobile-nav-link">Events</a>
+                <a href="#" class="mobile-nav-link contact">Contact now</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Bento Grid -->
+    <main class="bento-grid" id="bento-grid">
+        <!-- Card 1: Birmingham Museums (Left tall card) -->
+        <article class="card card-birmingham" id="card-birmingham">
+            <div class="card-content">
+                <span class="tag" id="tag-congreve">CONGREVE STREET</span>
+                <h1 class="card-title serif-title" id="title-birmingham">Birmingham<br><span class="underline">Museums.</span></h1>
+                <div class="card-image-wrapper">
+                    <img src="images/birmingham.png" alt="Vintage watercolor painting of Birmingham cityscape with cathedral spire" class="card-image" id="img-birmingham" loading="eager">
+                </div>
+            </div>
+            <div class="card-footer" id="footer-birmingham">
+                <span class="get-started">GET STARTED</span>
+                <span class="arrow">→</span>
+            </div>
+        </article>
+
+        <!-- Card 2: A Woman Slicing Bread (Top right wide card) -->
+        <article class="card card-bread" id="card-bread">
+            <div class="card-content card-bread-content">
+                <div class="card-bread-text">
+                    <span class="tag" id="tag-europeana-1">EUROPEANA</span>
+                    <h2 class="card-title serif-title" id="title-bread">A Woman Slicing <span class="underline">Bread.</span></h2>
+                    <p class="card-desc" id="desc-bread">DATE: 1800. INSTITUTION: RIJKSMUSEUM. PROVIDER: RIJKSMUSEUM. PROVIDING COUNTRY: NETHERLANDS. PUBLIC DOMAIN. PHOTO BY EUROPEANA.</p>
+                </div>
+                <div class="card-bread-image">
+                    <img src="images/bread.png" alt="Dutch painting of a woman slicing bread by candlelight" class="card-image" id="img-bread" loading="eager">
+                </div>
+            </div>
+            <div class="card-footer" id="footer-bread">
+                <span class="get-started">GET STARTED</span>
+                <span class="arrow">→</span>
+            </div>
+        </article>
+
+        <!-- Card 3: Portrait (Bottom middle card) -->
+        <article class="card card-portrait" id="card-portrait">
+            <div class="card-content">
+                <div class="card-portrait-image">
+                    <img src="images/portrait.png" alt="Portrait of Maritge Claesdr Vooght with white ruff collar" class="card-image" id="img-portrait" loading="lazy">
+                </div>
+                <div class="card-portrait-text">
+                    <div class="portrait-title-row">
+                        <h2 class="card-title serif-title portrait-heading" id="title-portrait"><span class="underline">Portrait</span></h2>
+                        <div class="dots" id="dots-indicator">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <p class="card-desc" id="desc-portrait">PORTRAIT OF MARITGE CLAESDR VOOGHT. DATE: 1639. INSTITUTION: RIJKSMUSEUM. PROVIDER: RIJKSMUSEUM. PROVIDING COUNTRY: NETHERLANDS. PUBLIC DOMAIN</p>
+                </div>
+            </div>
+            <div class="card-footer" id="footer-portrait">
+                <span class="get-started">GET STARTED</span>
+                <span class="arrow">→</span>
+            </div>
+        </article>
+
+        <!-- Card 4: Vintage Painting (Bottom right card) -->
+        <article class="card card-vintage" id="card-vintage">
+            <div class="card-content">
+                <div class="vintage-header">
+                    <span class="tag" id="tag-europeana-2">EUROPEANA</span>
+                    <div class="avatar-wrapper" id="avatar-wrapper">
+                        <img src="images/avatar.png" alt="Portrait of a Dutch nobleman" class="avatar-img" id="img-avatar" loading="lazy">
+                    </div>
+                </div>
+                <h2 class="card-title serif-title" id="title-vintage">Vintage <span class="underline">Painting.</span></h2>
+                <p class="card-desc" id="desc-vintage">PORTRAIT OF A MAN. DATE: 1648. INSTITUTION: RIJKSMUSEUM. PROVIDER: RIJKSMUSEUM. PROVIDING COUNTRY: NETHERLANDS. PUBLIC DOMAIN</p>
+                <div class="vintage-meta" id="vintage-meta">
+                    <div class="meta-divider"></div>
+                    <div class="meta-row">
+                        <span class="meta-label">PUBLIC DOMAIN</span>
+                        <span class="meta-label meta-right">NETHERLANDS</span>
+                    </div>
+                    <div class="meta-divider"></div>
+                </div>
+            </div>
+            <div class="card-footer" id="footer-vintage">
+                <span class="get-started">GET STARTED</span>
+                <span class="arrow">→</span>
+            </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
